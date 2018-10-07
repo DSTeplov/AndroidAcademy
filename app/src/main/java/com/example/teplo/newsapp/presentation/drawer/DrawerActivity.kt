@@ -9,7 +9,6 @@ import android.support.v7.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
 import com.example.teplo.newsapp.R
-import com.example.teplo.newsapp.presentation.about.AboutActivity
 import com.example.teplo.newsapp.presentation.about.AboutAsFragment
 import kotlinx.android.synthetic.main.activity_drawer.*
 import kotlinx.android.synthetic.main.app_bar_drawer.*
@@ -68,19 +67,15 @@ class DrawerActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelec
     }
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
-        // Handle navigation view item clicks here.
         when (item.itemId) {
             R.id.about_as -> openAboutAs()
-//            {
-//                AboutActivity.start(this)
-//            }
         }
         drawerLayout.closeDrawer(GravityCompat.START)
         return true
     }
 
     private fun openAboutAs() {
-        setTitle("About as")
+        title = "About as"
         selectFragment(AboutAsFragment())
     }
 

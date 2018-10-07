@@ -6,4 +6,11 @@
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
+    <string name="job">Android Developer</string>
+    <string name="information">Дмитрий является Android разработчиком с 2018 года.
+        В настоящее время работает на позиции Junior Android Developer.</string>
+
+    <string name="enter_message">Введите сообщение…</string>
+    <string name="send_message">Отправить сообщение</string>
+    <string name="title_about_as">О нас</string>
 </resources>
