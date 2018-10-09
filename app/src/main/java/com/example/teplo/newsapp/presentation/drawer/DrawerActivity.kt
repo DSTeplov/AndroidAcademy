@@ -54,16 +54,8 @@ class DrawerActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelec
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
-        // Inflate the menu; this adds items to the action bar if it is present.
         menuInflater.inflate(R.menu.drawer, menu)
         return true
-    }
-
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        return when (item.itemId) {
-            R.id.action_settings -> true
-            else -> super.onOptionsItemSelected(item)
-        }
     }
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
@@ -75,7 +67,6 @@ class DrawerActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelec
     }
 
     private fun openAboutAs() {
-        title = "About as"
         selectFragment(AboutAsFragment())
     }
 

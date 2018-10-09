@@ -13,4 +13,10 @@
     <string name="enter_message">Введите сообщение…</string>
     <string name="send_message">Отправить сообщение</string>
     <string name="title_about_as">О нас</string>
+    <string name="send_message_error_title">Ошибка отправки сообщения</string>
+    <string name="input_message">Введите сообщение</string>
+    <string name="okey">OK</string>
+    <string name="send_mail_title">Send mail...</string>
+    <string name="no_email_clients_installed">Не найдено почтовых сервисов на устройстве</string>
+    <string name="subject">Пользователь приложения NewsApp</string>
 </resources>
