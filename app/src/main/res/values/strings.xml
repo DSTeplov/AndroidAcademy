@@ -1,22 +1,24 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">NewsApp</string>
-    <string name="navigation_drawer_open">Open navigation drawer</string>
-    <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Android Studio</string>
-    <string name="nav_header_subtitle">android.studio@android.com</string>
-    <string name="nav_header_desc">Navigation header</string>
-    <string name="action_settings">Settings</string>
-    <string name="job">Android Developer</string>
-    <string name="information">Дмитрий является Android разработчиком с 2018 года.
-        В настоящее время работает на позиции Junior Android Developer.</string>
-
-    <string name="enter_message">Введите сообщение…</string>
-    <string name="send_message">Отправить сообщение</string>
-    <string name="title_about_as">О нас</string>
-    <string name="send_message_error_title">Ошибка отправки сообщения</string>
-    <string name="input_message">Введите сообщение</string>
-    <string name="okey">OK</string>
-    <string name="send_mail_title">Send mail...</string>
-    <string name="no_email_clients_installed">Не найдено почтовых сервисов на устройстве</string>
-    <string name="subject">Пользователь приложения NewsApp</string>
+    <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
+    <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
+    <string name="nav_header_title" translatable="false">Android Studio</string>
+    <string name="nav_header_subtitle" translatable="false">android.studio@android.com</string>
+    <string name="nav_header_desc" translatable="false">Navigation header</string>
+    <string name="action_settings" translatable="false">Settings</string>
+    <string name="job" translatable="false">Android Developer</string>
+    <string name="send_message">Send the message</string>
+    <string name="title_about_as">About as</string>
+    <string name="send_message_error_title">Error of sending message</string>
+    <string name="input_message">Enter the message</string>
+    <string name="okey" translatable="false">OK</string>
+    <string name="send_mail_title" translatable="false" tools:ignore="MissingTranslation">Send mail...</string>
+    <string name="no_email_clients_installed">No Email app found</string>
+    <string name="subject">NewsApp user</string>
+    <string name="enter_message">Enter the message…</string>
+    <string name="information">Dmitry has been doing Android Development since 2018. At this moment he is Junior Android Developer at the russian company.</string>
+    <string name="link_email" translatable="false">ted.develop@gmail.com</string>
+    <string name="link_instagram" translatable="false">http://www.instagram.com/teplovdmitry</string>
+    <string name="link_telegram" translatable="false">http://www.telegram.org/TEDmitry</string>
+    <string name="disclaimer" translatable="false">© 2018 TEDmitry</string>
 </resources>

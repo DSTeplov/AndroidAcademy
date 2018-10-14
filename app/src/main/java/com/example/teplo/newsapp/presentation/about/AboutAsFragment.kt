@@ -6,18 +6,16 @@ import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
 import android.support.v4.app.Fragment
+import android.view.Gravity
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import android.widget.Toast
 import com.example.teplo.newsapp.R
 import kotlinx.android.synthetic.main.fragment_about.*
 
 class AboutAsFragment : Fragment() {
-
-    companion object {
-        private const val MY_EMAIL = "ted.develop@gmail.com"
-    }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         return inflater.inflate(R.layout.fragment_about, container, false)
@@ -30,7 +28,7 @@ class AboutAsFragment : Fragment() {
     }
 
     private fun initSendMessage() {
-        sendMessage.setOnClickListener {
+        send_message.setOnClickListener {
             if (message.text.isEmpty())
                 AlertDialog.Builder(activity)
                         .setTitle(getString(R.string.send_message_error_title))
@@ -40,7 +38,7 @@ class AboutAsFragment : Fragment() {
                         .show()
             else {
                 val intent = Intent(Intent.ACTION_SENDTO)
-                val uriText = "mailto:" + Uri.encode(MY_EMAIL) +
+                val uriText = "mailto:" + Uri.encode(getString(R.string.link_email)) +
                         "?subject=" + Uri.encode(getString(R.string.subject)) +
                         "&body=" + Uri.encode(message.text.toString())
                 val uri = Uri.parse(uriText)
@@ -55,5 +53,21 @@ class AboutAsFragment : Fragment() {
                 }
             }
         }
+        icon_telegram.setOnClickListener { openSocial(getString(R.string.link_telegram)) }
+        icon_instagram.setOnClickListener { openSocial(getString(R.string.link_instagram)) }
+        createDisclaimer()
+    }
+
+    private fun createDisclaimer() {
+        val disclaimer = TextView(context)
+        disclaimer.text = getString(R.string.disclaimer)
+        disclaimer.gravity = Gravity.CENTER_HORIZONTAL
+        layout_disclaimer.addView(disclaimer)
+    }
+
+    private fun openSocial(link: String) {
+        val intent = Intent(Intent.ACTION_VIEW)
+        intent.data = (Uri.parse(link))
+        startActivity(intent)
     }
 }
