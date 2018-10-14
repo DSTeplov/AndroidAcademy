@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">NewsApp</string>
+    <string name="information">Дмитрий является Android разработчиком с 2018 года. В настоящее время работает на позиции Junior Android разработчик в российской компании.</string>
+    <string name="enter_message">Введите сообщение…</string>
+    <string name="send_message">Отправить сообщение</string>
+    <string name="title_about_as">О нас</string>
+    <string name="send_message_error_title">Ошибка отправки сообщения</string>
+    <string name="input_message">Введите сообщение</string>
+    <string name="no_email_clients_installed">Не найдено почтовых сервисов на устройстве</string>
+    <string name="subject">Пользователь приложения NewsApp</string>
+</resources>
